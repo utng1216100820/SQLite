@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_song"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimeActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_name"
+        android:inputType="text"
+        android:hint="@string/type_name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/type_artist"
+        android:id="@+id/edt_creator"
+        android:layout_below="@id/edt_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/type_album"
+        android:id="@+id/edt_gender"
+        android:layout_below="@id/edt_creator"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/year"
+        android:id="@+id/edt_year"
+        android:layout_below="@id/edt_gender"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/chapters"
+        android:id="@+id/edt_chapters"
+        android:layout_below="@id/edt_year"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn_save_song"
+        android:layout_width="@dimen/dimen_button"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_chapters"
+        android:layout_centerHorizontal="true"
+        android:text="@string/save_song" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_save_song"
+        android:id="@+id/rcv_list">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

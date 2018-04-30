@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/legend">
+
+        <Button
+            android:id="@+id/cveSong"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Anime"
+            android:onClick="animeAct"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/cvePro"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Product"
+            android:onClick="productAct"
+            android:textAlignment="center"
+            android:layout_below="@id/cveSong"/>
+        <Button
+            android:id="@+id/cveCus"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Customer"
+            android:onClick="customerAct"
+            android:textAlignment="center"
+            android:layout_below="@id/cvePro"/>
+        <Button
+            android:id="@+id/cveMet"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Method"
+            android:onClick="methodAct"
+            android:textAlignment="center"
+            android:layout_below="@id/cveCus"/>
+        <Button
+            android:id="@+id/cveOrd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Order"
+            android:onClick="orderAct"
+            android:textAlignment="center"
+            android:layout_below="@id/cveMet"/>
+        <Button
+            android:id="@+id/cveOrdDet"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Order Detail"
+            android:onClick="orderDetAct"
+            android:textAlignment="center"
+            android:layout_below="@id/cveOrd"/>
+        <Button
+            android:id="@+id/cveSupplier"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Supplier"
+            android:onClick="supplierAct"
+            android:textAlignment="center"
+            android:layout_below="@+id/cveOrdDet"/>
+</RelativeLayout>
